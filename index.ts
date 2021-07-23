@@ -5,9 +5,8 @@
 */
 
 export function isValid(url: string): boolean {
-    if (url.length <= 0) {
-        return false
-    }
+    if (!url) return false
+    if (url.length <= 0) return false
 
     return true
 }
