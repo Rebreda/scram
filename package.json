@@ -1,0 +1,20 @@
+{
+  "name": "scram",
+  "version": "1.0.0",
+  "description": "URL validator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --reporter spec",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^7.31.0",
+    "mocha": "^9.0.2",
+    "typescript": "^4.3.5"
+  }
+}
