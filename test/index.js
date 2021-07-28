@@ -9,8 +9,13 @@ describe('isValid', () => {
         expect(RESULT).to.be.false
     })
     it('is false with empty string', () => {
-        const RESULT = scram.isValid('Girl')
+        const RESULT = scram.isValid('')
         expect(RESULT).to.be.false
+    })
+    it('is false with incomplete string abc', () => {
+        const VALID_URL = `abc`
+        const RESULT = scram.isValid(VALID_URL)
+        expect(RESULT).to.be.true
     })
     it('is true with http://example.com', () => {
         const VALID_URL = `http://example.com`
